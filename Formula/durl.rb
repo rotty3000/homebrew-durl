@@ -2,22 +2,22 @@ class Durl < Formula
   desc "A simple command-line tool for parsing and formatting URLs, a Rust port of gurl"
   homepage "https://github.com/rotty3000/durl"
   license "MIT"
-  version "0.1.3"
+  version "0.1.4"
 
   on_linux do
     if Hardware::CPU.intel?
-      sha256 "820d3fcc57b2f7818eca39058a6010b48852982205e2b4a7889d7a3ef211aad1"
-      url "https://github.com/rotty3000/durl/releases/download/v0.1.3/durl-linux-amd64"
+      sha256 "b0a395bad556cc668b401dbebb5d53a449721bfdf67d0335347955d471e850a5"
+      url "https://github.com/rotty3000/durl/releases/download/v0.1.4/durl-linux-amd64"
     elsif Hardware::CPU.arm?
-      sha256 "b05664b7003fa608c5302c6d8e21e00d7f9fcd3314ebf26a1a552c4b92105920"
-      url "https://github.com/rotty3000/durl/releases/download/v0.1.3/durl-linux-arm64"
+      sha256 "efbbf7db10f8cfcf15a8cd3592cf69e0901cb87a66744845fc8c36763dc2a0ce"
+      url "https://github.com/rotty3000/durl/releases/download/v0.1.4/durl-linux-arm64"
     end
   end
 
   on_macos do
     depends_on "rust" => :build
-    sha256 "3721fd64829bbb44877eb33ee202a4a6a3397f5bd8b8f631af30331e6ed8af5c"
-    url "https://github.com/rotty3000/durl/archive/refs/tags/v0.1.3.tar.gz"
+    sha256 "96e4b51402130e33323f3317d51323018d6cf1fc15085b47431feb4b97575660"
+    url "https://github.com/rotty3000/durl/archive/refs/tags/v0.1.4.tar.gz"
   end
 
   def install
